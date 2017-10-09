@@ -1,0 +1,222 @@
+{>"./layout" /}
+
+{<body}
+<div class="container">
+<div class="row">
+    <div class="col s8">
+        <div class="col s12 cate">
+            <a class="waves-effect waves-light btn z-depth-0">angular</a>
+            <a class="waves-effect waves-light btn z-depth-0">typescript</a>
+            <a class="waves-effect waves-light btn z-depth-0">cordova</a>
+            <a class="waves-effect waves-light btn z-depth-0">ionic</a>
+            <a class="waves-effect waves-light btn z-depth-0">webpack</a>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">如何利用node+express快速构建API</span>
+                <p>在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.</p>
+            </div>
+            <div class="card-action">
+                <div class="article-msg left">
+                    <span><i class="material-icons">date_range</i> 发布于：1天前</span>
+                    <span><i class="material-icons">remove_red_eye</i> 2365次阅读</span>
+                </div>
+                <div class="right right-align"><a class="article-tag">angular</a></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">如何利用node+express快速构建API</span>
+                <p>在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.</p>
+            </div>
+            <div class="card-action">
+                <div class="article-msg left">
+                    <span><i class="material-icons">date_range</i> 发布于：1天前</span>
+                    <span><i class="material-icons">remove_red_eye</i> 2365次阅读</span>
+                </div>
+                <div class="right right-align"><a class="article-tag">angular</a></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">如何利用node+express快速构建API</span>
+                <p>在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.</p>
+            </div>
+            <div class="card-action">
+                <div class="article-msg left">
+                    <span><i class="material-icons">date_range</i> 发布于：1天前</span>
+                    <span><i class="material-icons">remove_red_eye</i> 2365次阅读</span>
+                </div>
+                <div class="right right-align"><a class="article-tag">angular</a></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">如何利用node+express快速构建API</span>
+                <p>在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.</p>
+            </div>
+            <div class="card-action">
+                <div class="article-msg left">
+                    <span><i class="material-icons">date_range</i> 发布于：1天前</span>
+                    <span><i class="material-icons">remove_red_eye</i> 2365次阅读</span>
+                </div>
+                <div class="right right-align"><a class="article-tag">angular</a></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">如何利用node+express快速构建API</span>
+                <p>在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.</p>
+            </div>
+            <div class="card-action">
+                <div class="article-msg left">
+                    <span><i class="material-icons">date_range</i> 发布于：1天前</span>
+                    <span><i class="material-icons">remove_red_eye</i> 2365次阅读</span>
+                </div>
+                <div class="right right-align"><a class="article-tag">angular</a></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">如何利用node+express快速构建API</span>
+                <p>在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.</p>
+            </div>
+            <div class="card-action">
+                <div class="article-msg left">
+                    <span><i class="material-icons">date_range</i> 发布于：1天前</span>
+                    <span><i class="material-icons">remove_red_eye</i> 2365次阅读</span>
+                </div>
+                <div class="right right-align"><a class="article-tag">angular</a></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">如何利用node+express快速构建API</span>
+                <p>在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.</p>
+            </div>
+            <div class="card-action">
+                <div class="article-msg left">
+                    <span><i class="material-icons">date_range</i> 发布于：1天前</span>
+                    <span><i class="material-icons">remove_red_eye</i> 2365次阅读</span>
+                </div>
+                <div class="right right-align"><a class="article-tag">angular</a></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">如何利用node+express快速构建API</span>
+                <p>在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.</p>
+            </div>
+            <div class="card-action">
+                <div class="article-msg left">
+                    <span><i class="material-icons">date_range</i> 发布于：1天前</span>
+                    <span><i class="material-icons">remove_red_eye</i> 2365次阅读</span>
+                </div>
+                <div class="right right-align"><a class="article-tag">angular</a></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">如何利用node+express快速构建API</span>
+                <p>在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.</p>
+            </div>
+            <div class="card-action">
+                <div class="article-msg left">
+                    <span><i class="material-icons">date_range</i> 发布于：1天前</span>
+                    <span><i class="material-icons">remove_red_eye</i> 2365次阅读</span>
+                </div>
+                <div class="right right-align"><a class="article-tag">angular</a></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">如何利用node+express快速构建API</span>
+                <p>在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.</p>
+            </div>
+            <div class="card-action">
+                <div class="article-msg left">
+                    <span><i class="material-icons">date_range</i> 发布于：1天前</span>
+                    <span><i class="material-icons">remove_red_eye</i> 2365次阅读</span>
+                </div>
+                <div class="right right-align"><a class="article-tag">angular</a></div>
+            </div>
+        </div>
+
+        <div id="pagination" class="text-center">
+            <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col s4 right-lib">
+        <div class="col">
+            <div class="card-panel grey lighten-5 z-depth-0">
+                <div class="row valign-wrapper">
+                    <div class="col s3">
+                        <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle responsive-img">
+                    </div>
+                    <div class="col s9">
+                      <span class="black-text">
+                        没有办法消除混乱，只是让某些局部变得更有秩序，把混乱转移到另一些领域.
+                      </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pad_inner">
+                <h3 class="center-align">最新文章</h3>
+                <ul>
+                    <li class="real_time_wrapper">
+                        <i class="material-icons Tiny">chevron_right</i> 全国2800家星巴克接入微信电子发票
+                        <div class="publish-at">39分钟前</div>
+                    </li>
+                    <li class="real_time_wrapper">
+                        <i class="material-icons Tiny">chevron_right</i> 全国2800家星巴克接入微信电子发票
+                        <div class="publish-at">39分钟前</div>
+                    </li>
+                    <li class="real_time_wrapper">
+                        <i class="material-icons Tiny">chevron_right</i> 全国2800家星巴克接入微信电子发票
+                        <div class="publish-at">39分钟前</div>
+                    </li>
+                    <li class="real_time_wrapper">
+                        <i class="material-icons Tiny">chevron_right</i> 全国2800家星巴克接入微信电子发票
+                        <div class="publish-at">39分钟前</div>
+                    </li>
+                    <li class="real_time_wrapper">
+                        <i class="material-icons Tiny">chevron_right</i> 全国2800家星巴克接入微信电子发票
+                        <div class="publish-at">39分钟前</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hot_tag_right pad_inner"><h3><span>热点标签</span></h3>
+                <div class="inner_con">
+                    <a class="kr-tag-gray" href="/">淘当铺</a>
+                    <a class="kr-tag-gray" href="/">淘当铺</a>
+                    <a class="kr-tag-gray" href="/">淘当铺</a>
+                    <a class="kr-tag-gray" href="/">淘当铺</a>
+                    <a class="kr-tag-gray" href="/">淘当铺</a>
+                    <a class="kr-tag-gray" href="/">淘当铺</a>
+                    <a class="kr-tag-gray" href="/">淘当铺</a>
+                    <a class="kr-tag-gray" href="/">淘当铺</a>
+                    <a class="kr-tag-gray" href="/">淘当铺</a>
+                    <a class="kr-tag-gray" href="/">淘当铺</a>
+                    <a class="kr-tag-gray" href="/">淘当铺</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+{/body}

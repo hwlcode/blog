@@ -1,0 +1,116 @@
+nav {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 0px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 1px -2px rgba(0, 0, 0, 0.2); }
+
+nav ul a, nav .brand-logo {
+  color: #444; }
+
+p {
+  line-height: 2rem; }
+
+.button-collapse {
+  color: #26a69a; }
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  color: rgba(255, 255, 255, 0.9); }
+
+.parallax-container .section {
+  width: 100%; }
+
+.card {
+  box-shadow: none; }
+
+.header {
+  padding: 0 20px; }
+
+.text-center {
+  text-align: center; }
+
+.pagination {
+  display: inline-block; }
+
+.material-icons {
+  vertical-align: middle;
+  font-size: 16px; }
+
+.article-msg span {
+  color: #999;
+  margin-right: 15px;
+  font-size: 13px; }
+
+.article-tag {
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 3px 15px;
+  cursor: pointer;
+  margin-right: 0 !important;
+  font-size: 13px; }
+
+.card-content p {
+  color: #999 !important;
+  font-size: 13px; }
+
+.card .card-content {
+  padding: 24px 0; }
+
+.card .card-action {
+  padding: 16px 0; }
+
+.right-lib .pad_inner {
+  margin-bottom: 2.5rem; }
+  .right-lib .pad_inner h3 {
+    font-size: 18px;
+    color: #3d464d;
+    padding: .8rem 0;
+    text-align: center;
+    border-top: 2px solid #009688;
+    border-bottom: 1px dashed #e6e8eb; }
+
+.publish-at {
+  color: #999999;
+  font-size: 13px;
+  line-height: 25px;
+  padding-left: 20px; }
+
+.kr-tag-gray {
+  padding: 0 15px;
+  border: 1px solid #68727d;
+  border-radius: 15px;
+  color: #68727d;
+  margin: 0 15px 15px 0;
+  white-space: nowrap;
+  display: inline-block; }
+
+.kr-tag-gray:hover {
+  color: #009688 !important; }
+
+.cate {
+  padding: 30px 0 !important; }
+
+.cate .btn {
+  margin-right: 10px;
+  border-radius: 20px;
+  border: 1px #999 solid;
+  background: none;
+  color: #999;
+  padding: 0 1.5rem; }
+
+.cate .btn:hover {
+  color: #009688 !important; }
+
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    top: 40%; }
+  #index-banner .section {
+    top: 10%; } }
+
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0; }
+  .icon-block {
+    padding: 0 15px; }
+  footer.page-footer {
+    margin: 0; } }
+
+/*# sourceMappingURL=style.css.map */
