@@ -11,8 +11,22 @@
     <link href="/stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-{> "header" /}
+{> "login-header" /}
 {+body}{/body}
+
+<div id="login" class="modal bottom-sheet">
+    <div class="modal-content">
+        <h4>登录</h4>
+        <ul class="collection">
+            <li class="collection-item center-align">
+                <i class="iconfont icon-github1"></i> <a class="title" href="/users/auth/github"> 使用github帐号登录</a>
+            </li>
+            <li class="collection-item center-align">
+                <i class="iconfont icon-qq"></i> <a class="title" href="/users/auth/qq"> 使用QQ帐号登录</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
 <!--  Scripts-->
 <script src="/lib/jquery/dist/jquery.js"></script>

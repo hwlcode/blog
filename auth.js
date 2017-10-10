@@ -2,14 +2,21 @@ var passport = require('passport');
 var GitHubStrategy = require('passport-github2').Strategy;
 var qqStrategy = require('passport-qq').Strategy;
 var ENV = require('./evn');
+var User = require('./models').UserModel;
 
-passport.serializeUser(function(user, done) {
-    done(null, user);
-});
+passport.serializeUser(function(user, done){
+    //把passport返回的user的id存入session当中
+    done(null, user.id)
+})
 
-passport.deserializeUser(function(obj, done) {
-    done(null, obj);
-});
+passport.deserializeUser(function(id, done){
+    //当需要用到user时，使用ID查出数据当中的用户信息,sourceTypeId是数据当中存储的字段名
+    //取的时候用：req.session.passport = { user: '****' }
+    //serializeUser与deserializeUser是专门用来处理session的，其他地方无需要再处理session
+    User.findOne({sourceTypeId: id}, function(err, user){
+        done(err, user)
+    })
+})
 
 /**
  * github API
@@ -35,7 +42,7 @@ passport.use(new qqStrategy({
         callbackURL: "/users/auth/qq/callback"
     },
     function(accessToken, refreshToken, profile, done) {
-        done(null, profile);
+        return done(null, profile);
     }
 ));
 

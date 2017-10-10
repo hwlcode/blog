@@ -1,7 +1,6 @@
 {>"./fullscreen" /}
 
         {<body}
-
 <link rel="stylesheet" href="/lib/simplemde/dist/simplemde.min.css">
 <script src="/lib/jquery/dist/jquery.js"></script>
 <script src="/lib/simplemde/dist/simplemde.min.js"></script>
@@ -10,28 +9,28 @@
 <div class="row">
     <div class="col s12">
         <div class="input-field col s2">
-            <select>
+            <select name="cate">
                 <option value="" disabled selected>请选择</option>
-                <option value="1">前端开发</option>
-                <option value="2">工作感悟</option>
-                <option value="3">生活随想</option>
+                <option value="前端开发">前端开发</option>
+                <option value="工作感悟">工作感悟</option>
+                <option value="生活随想">生活随想</option>
             </select>
             <label>文章分类</label>
         </div>
         <div class="input-field col s10">
-            <input placeholder="文章标题" id="first_name" type="text" class="validate">
-            <label for="first_name">标题</label>
+            <input placeholder="文章标题" id="title" type="text" class="validate" name="title">
+            <label for="title" class="active">标题</label>
         </div>
     </div>
     <div class="col s12">
         <div class="input-field col s2">
-            <select>
+            <select name="subCate">
                 <option value="" disabled selected>请选择</option>
-                <option value="1">angular</option>
-                <option value="2">typescript</option>
-                <option value="3">cordova</option>
-                <option value="3">ionic</option>
-                <option value="3">webpack</option>
+                <option value="angular">angular</option>
+                <option value="typescript">typescript</option>
+                <option value="cordova">cordova</option>
+                <option value="ionic">ionic</option>
+                <option value="webpack">webpack</option>
             </select>
             <label>前端技术</label>
         </div>
@@ -48,21 +47,12 @@
     <div class="post-footer z-depth-2">
         <div class="col s12 right-align">
             <div class="col s12">
-                <button class="btn z-depth-0">发布文章</button>
+                <button class="btn z-depth-0" id="submit">发布文章</button>
             </div>
         </div>
     </div>
 </div>
 </div>
 
-<script>
-    var simplemde = new SimpleMDE({
-        element: $("#post")[0],
-        spellChecker: false,
-        autosave: {
-            enabled: true,
-            unique_id: "post",
-        }
-    });
-</script>
-        {/body}
+<script src="/javascripts/post.js"></script>
+ {/body}

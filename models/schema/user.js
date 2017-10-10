@@ -2,6 +2,7 @@
 
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
+var findOrCreate = require('mongoose-findorcreate')
 
 var UserSchema = new Schema({
         username: { type:String},
@@ -17,5 +18,6 @@ var UserSchema = new Schema({
         timestamps: true
     }
 );
-
+//添加findorcreate插件
+UserSchema.plugin(findOrCreate);
 mongoose.model('User', UserSchema);

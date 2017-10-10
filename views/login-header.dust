@@ -1,0 +1,25 @@
+<div class="navbar-fixed">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper header">
+            <a id="logo-container" href="/" class="brand-logo">尚学</a>
+            <ul class="right hide-on-med-and-down">
+                {#user}
+                <li>
+                    <a class="dropdown-button" href="#!" data-activates="dropdown1">
+                        <span class="login-avatar"><img src="{avatar}" alt="" width="45" height="45"/></span>
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+                {/user}
+
+                {^user}
+                <li><a class="btn z-depth-0 modal-trigger" href="#login">登录</a></li>
+                {/user}
+            </ul>
+            <!--login dropdown list-->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="/users/logout">退出</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>

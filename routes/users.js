@@ -42,17 +42,9 @@ module.exports = function (passport) {
                 blogUser.sourceType = 'github';
                 blogUser.sourceTypeId = userObj.id;
                 co(function *() {
-                    var user = yield userModel.findOne({sourceTypeId: userObj.id}).exec();
-
-                    if(user == null){
-                        var userMsg = yield userModel.create(blogUser);
-
-                        req.session.user = userMsg;
-                        yield res.redirect('/');
-                    }else{
-                        req.session.user = user;
-                        yield res.redirect('/');
-                    }
+                    yield userModel.findOrCreate(blogUser).then(function (result) {
+                        res.redirect('/');
+                    });
                 });
             }
         });
@@ -85,15 +77,11 @@ module.exports = function (passport) {
                 blogUser.sourceType = 'qq';
                 blogUser.sourceTypeId = res.req.user.id;
                 co(function *() {
-                    var user = yield userModel.findOne({sourceTypeId: res.req.user.id}).exec();
-                    if(user == null){
-                        var userMsg = yield userModel.create(blogUser);
-                        req.session.user = userMsg;
-                        yield res.redirect('/');
-                    }else{
-                        req.session.user = user;
-                        yield res.redirect('/');
-                    }
+                    yield userModel.findOrCreate(blogUser).then(function (result) {
+                        //qq passport需要手动写入session
+                        req.session.passport= { user: result.doc.sourceTypeId };
+                        res.redirect('/');
+                    });
                 });
             }
         });
