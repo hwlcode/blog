@@ -57,15 +57,17 @@ p {
 .card .card-action {
   padding: 16px 0; }
 
-.right-lib .pad_inner {
-  margin-bottom: 2.5rem; }
-  .right-lib .pad_inner h3 {
-    font-size: 18px;
-    color: #3d464d;
-    padding: .8rem 0;
-    text-align: center;
-    border-top: 2px solid #009688;
-    border-bottom: 1px dashed #e6e8eb; }
+.right-lib {
+  padding-left: 45px !important; }
+  .right-lib .pad_inner {
+    margin-bottom: 2.5rem; }
+    .right-lib .pad_inner h3 {
+      font-size: 18px;
+      color: #3d464d;
+      padding: .8rem 0;
+      text-align: center;
+      border-top: 2px solid #009688;
+      border-bottom: 1px dashed #e6e8eb; }
 
 .publish-at {
   color: #999999;
@@ -99,7 +101,42 @@ p {
 .cate .btn:hover {
   color: #009688 !important; }
 
-@media only screen and (max-width: 992px) {
+.card-title {
+  color: rgba(0, 0, 0, 0.87); }
+
+.breadcrumb {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 14px; }
+
+.breadcrumb:before {
+  color: rgba(0, 0, 0, 0.75); }
+
+.breadcrumb:last-child {
+  color: rgba(0, 0, 0, 0.87); }
+
+.row .col.no-pad {
+  padding: 0 !important; }
+
+.post {
+  margin: 20px 0 0 0; }
+
+.post-footer {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0px;
+  bottom: 0; }
+
+.article-view .card-title {
+  font-weight: 600;
+  margin-bottom: 30px;
+  display: block; }
+
+.article-view .card-content {
+  margin: 80px 0; }
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 80%; }
   .parallax-container .section {
     top: 40%; }
   #index-banner .section {

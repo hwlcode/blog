@@ -13,7 +13,7 @@
         </div>
         <div class="card">
             <div class="card-content">
-                <span class="card-title">如何利用node+express快速构建API</span>
+                <a class="card-title" href="/article/1">如何利用node+express快速构建API</a>
                 <p>在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.</p>
             </div>
             <div class="card-action">

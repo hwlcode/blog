@@ -1,0 +1,68 @@
+{>"./fullscreen" /}
+
+        {<body}
+
+<link rel="stylesheet" href="/lib/simplemde/dist/simplemde.min.css">
+<script src="/lib/jquery/dist/jquery.js"></script>
+<script src="/lib/simplemde/dist/simplemde.min.js"></script>
+
+<div class="fullscreen post">
+    <div class="row">
+        <div class="col s12">
+            <div class="input-field col s2">
+                <select>
+                    <option value="" disabled selected>请选择</option>
+                    <option value="1">前端开发</option>
+                    <option value="2">工作感悟</option>
+                    <option value="3">生活随想</option>
+                </select>
+                <label>文章分类</label>
+            </div>
+            <div class="input-field col s10">
+                <input placeholder="文章标题" id="first_name" type="text" class="validate">
+                <label for="first_name">标题</label>
+            </div>
+        </div>
+        <div class="col s12">
+            <div class="input-field col s2">
+                <select>
+                    <option value="" disabled selected>请选择</option>
+                    <option value="1">angular</option>
+                    <option value="2">typescript</option>
+                    <option value="3">cordova</option>
+                    <option value="3">ionic</option>
+                    <option value="3">webpack</option>
+                </select>
+                <label>前端技术</label>
+            </div>
+            <div class="input-field col s10">
+                <div class="chips chips-placeholder"></div>
+            </div>
+        </div>
+
+        <div class="col s12">
+            <div class="col s12">
+                <textarea id="post" placeholder="请输入正文"></textarea>
+            </div>
+        </div>
+        <div class="post-footer z-depth-2">
+            <div class="col s12 right-align">
+                <div class="col s12">
+                    <button class="btn z-depth-0">发布文章</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var simplemde = new SimpleMDE({
+        element: $("#post")[0],
+        spellChecker: false,
+        autosave: {
+            enabled: true,
+            unique_id: "post",
+        }
+    });
+</script>
+{/body}

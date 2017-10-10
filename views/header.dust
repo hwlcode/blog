@@ -1,26 +1,25 @@
-<nav class="white" role="navigation">
-    <div class="nav-wrapper header">
-        <a id="logo-container" href="#" class="brand-logo">尚学</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#">前端开发</a></li>
-            <li><a href="#">工作感悟</a></li>
-            <li><a href="#">生活随笔</a></li>
-            <li><a href="#">关于尚学</a></li>
-            <li><a class="btn z-depth-0">撰写</a></li>
-            <li><a class="btn z-depth-0 modal-trigger" href="#login">登录</a></li>
-        </ul>
+<div class="navbar-fixed">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper header">
+            <a id="logo-container" href="/" class="brand-logo">尚学</a>
+            <ul class="right hide-on-med-and-down">
+                <li class="active"><a href="#">前端开发</a></li>
+                <li><a href="#">工作感悟</a></li>
+                <li><a href="#">生活随笔</a></li>
+                <li><a href="#">关于尚学</a></li>
+                <li><a class="btn z-depth-0" href="/post">撰写</a></li>
+                <li><a class="btn z-depth-0 modal-trigger" href="#login">登录</a></li>
+            </ul>
 
-        <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">前端开发</a></li>
-            <li><a href="#">工作感悟</a></li>
-            <li><a href="#">生活随笔</a></li>
-            <li><a href="#">关于尚学</a></li>
-            <li><a class="btn z-depth-1">撰写</a></li>
-            <li><a class="btn z-depth-1">登录</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-</nav>
-
-
-
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">前端开发</a></li>
+                <li><a href="#">工作感悟</a></li>
+                <li><a href="#">生活随笔</a></li>
+                <li><a href="#">关于尚学</a></li>
+                <li><a class="btn z-depth-1">撰写</a></li>
+                <li><a class="btn z-depth-1">登录</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</div>

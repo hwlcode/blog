@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{+title}尚学{/title}</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/lib/materialize/dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+{> "header" /}
+{+body}{/body}
+
+<!--  Scripts-->
+<script src="/lib/jquery/dist/jquery.js"></script>
+<script src="/lib/materialize/dist/js/materialize.js"></script>
+<script src="/javascripts/common.js"></script>
+</body>
+</html>
