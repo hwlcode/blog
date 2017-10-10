@@ -8,4 +8,6 @@ $(document).ready(function(){
         placeholder: '添加标签',
         secondaryPlaceholder: '+Tag',
     });
+    //header dropdown
+    $(".dropdown-button").dropdown();
 });

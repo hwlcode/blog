@@ -3,7 +3,9 @@ var router = express.Router();
 var Models  = require('../models');
 
 router.get('/', function (req, res, next) {
-    res.render('index', {title: 'Express'});
+    res.render('index', {
+        user: req.session.user || null
+    });
 });
 
 router.get('/post', function (req, res, next) {

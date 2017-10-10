@@ -6,16 +6,26 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 var adaro = require('adaro');
-
-var index = require('./routes/index');
-var users = require('./routes/users');
+var session = require('express-session');
 
 var app = express();
+
+//session
+app.set('trust proxy', 1);
+app.use(session({ secret: 'hwl code', cookie: { maxAge: 60000 }}));
 
 // view engine setup
 app.engine('dust', adaro.dust());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'dust');
+
+//初始化auth passport-github
+const passport = require('./auth.js');
+app.use(passport.initialize());
+app.use(passport.session());
+
+var index = require('./routes/index');
+var users = require('./routes/users')(passport);
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

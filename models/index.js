@@ -1,8 +1,10 @@
 "use strict";
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/blog', {useMongoClient: true}, function(err){
+var ENV = require('../evn');
+
+mongoose.connect('mongodb://localhost:27017/'+ENV.db, {useMongoClient: true}, function(err){
     if (err) {
-        console.error('connect to %s error: ', 'mongodb://localhost:27017/blog', err.message);
+        console.error('connect to %s error: ', 'mongodb://localhost:27017/'+ENV.db, err.message);
         process.exit(1);
     }
 });
