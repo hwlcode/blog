@@ -195,7 +195,6 @@ router.get('/tag/:id', function (req, res, next) {
         var tags = yield LabelModel.find().exec();
         var latest = yield TopicModel.find().limit( 5 ).sort({createdAt: -1}).exec();
         latest.map(function (item) {
-            item.post = item.post.split('<!--more-->')[0];
             item.created = moment(new Date(item.createdAt)).fromNow();
         });
 
@@ -209,6 +208,7 @@ router.get('/tag/:id', function (req, res, next) {
         }).exec(function (err, docPopulate) {
             console.log(docPopulate);
             docPopulate.articleId.map(function (item) {
+                item.post = item.post.split('<!--more-->')[0];
                 item.created = moment(new Date(item.createdAt)).fromNow();
             });
             res.render('index', {
@@ -230,7 +230,6 @@ router.get('/topic/:name', function (req, res, next) {
         var tags = yield LabelModel.find().exec();
         var latest = yield TopicModel.find().limit( 5 ).sort({createdAt: -1}).exec();
         latest.map(function (item) {
-            item.post = item.post.split('<!--more-->')[0];
             item.created = moment(new Date(item.createdAt)).fromNow();
         });
 
@@ -244,6 +243,7 @@ router.get('/topic/:name', function (req, res, next) {
 
         yield TopicModel.find({cate: id}).populate(opts).sort({createdAt: -1}).exec(function(err, populatedDoc) {
             populatedDoc.map(function (item) {
+                item.post = item.post.split('<!--more-->')[0];
                 item.created = moment(new Date(item.createdAt)).fromNow();
             });
 
@@ -265,7 +265,6 @@ router.get('/topic/s/:name', function (req, res, next) {
         var tags = yield LabelModel.find().exec();
         var latest = yield TopicModel.find().limit( 5 ).sort({createdAt: -1}).exec();
         latest.map(function (item) {
-            item.post = item.post.split('<!--more-->')[0];
             item.created = moment(new Date(item.createdAt)).fromNow();
         });
 
@@ -279,6 +278,7 @@ router.get('/topic/s/:name', function (req, res, next) {
 
         yield TopicModel.find({subCate: id}).populate(opts).sort({createdAt: -1}).exec(function(err, populatedDoc) {
             populatedDoc.map(function (item) {
+                item.post = item.post.split('<!--more-->')[0];
                 item.created = moment(new Date(item.createdAt)).fromNow();
             });
 
