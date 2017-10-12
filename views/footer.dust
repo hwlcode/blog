@@ -8,7 +8,7 @@
             <div class="col l3 s12">
                 <h5 class="white-text">在线资源</h5>
                 <ul class="footer-list">
-                    <li><a class="white-text" href="https://angular.cn/docs" no-follow target="_blank">angular官网</a></li>
+                    <li><a class="white-text" href="https://angular.cn/docs" no-follow target="_blank">Angular官网</a></li>
                     <li><a class="white-text" href="http://www.typescriptlang.org/docs/home.html" no-follow target="_blank">Typescript官网</a></li>
                     <li><a class="white-text" href="http://ionicframework.com/docs/" no-follow target="_blank">Ionic官网</a></li>
                     <li><a class="white-text" href="http://ionicframework.com/docs/native/" no-follow target="_blank">Ionic native</a></li>
