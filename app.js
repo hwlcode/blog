@@ -7,12 +7,16 @@ var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 var adaro = require('adaro');
 var session = require('express-session');
+var ENV = require('./evn');
+
 
 var app = express();
 
 //session
 app.set('trust proxy', 1);
-app.use(session({ secret: 'hwl code', cookie: { maxAge: 60000 }}));
+app.use(session({ secret: ENV.secret, cookie: {
+    maxAge: 1000 * 60 * 60 * 24 * 30 //30 days
+}}));
 
 // view engine setup
 app.engine('dust', adaro.dust());

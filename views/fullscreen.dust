@@ -3,12 +3,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>{+title}尚学{/title}</title>
+    <title>{+title}知秋一叶{/title}</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="/lib/materialize/dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="/stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/fonticon/iconfont.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
 {> "login-header" /}
@@ -31,6 +32,7 @@
 <!--  Scripts-->
 <script src="/lib/jquery/dist/jquery.js"></script>
 <script src="/lib/materialize/dist/js/materialize.js"></script>
+<script src="/lib/highlight/src/highlight.js"></script>
 <script src="/javascripts/common.js"></script>
 </body>
 </html>

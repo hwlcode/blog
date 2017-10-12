@@ -2,28 +2,36 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text">尚学</h5>
+                <h5 class="white-text">燕赤霞</h5>
                 <p class="grey-text text-lighten-4">没有办法消除混乱，只是让某些局部变得更有秩序，把混乱转移到另一些领域.</p>
 
 
             </div>
             <div class="col l3 s12">
-                <h5 class="white-text">设置</h5>
-                <ul>
-                    <li><a class="white-text" href="#!">一键登录</a></li>
+                <h5 class="white-text">在线资源</h5>
+                <ul class="footer-list">
+                    <li><a class="white-text" href="https://angular.cn/docs" no-follow target="_blank">angular官网</a></li>
+                    <li><a class="white-text" href="http://www.typescriptlang.org/docs/home.html" no-follow target="_blank">Typescript官网</a></li>
+                    <li><a class="white-text" href="http://ionicframework.com/docs/" no-follow target="_blank">Ionic官网</a></li>
+                    <li><a class="white-text" href="http://ionicframework.com/docs/native/" no-follow target="_blank">Ionic native</a></li>
+                    <li><a class="white-text" href="http://cordova.axuer.com/" no-follow target="_blank">Cordova中文网</a></li>
+                    <li><a class="white-text" href="http://redux.js.org/" no-follow target="_blank">Redux</a></li>
                 </ul>
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text">联系我</h5>
                 <ul>
-                    <li><a class="white-text" href="#!">关于我</a></li>
+                    <li><a class="white-text" href="/about">关于知秋一叶</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="footer-copyright">
-        <div class="container">
+        <div class="container clear">
             Made by <a class="brown-text text-lighten-3" href="http://all-stack.com">all-stack.com</a>
+            <div class="right">
+                <a href="https://github.com/hwlcode" class="footer-github" target="_blank"><i class="iconfont icon-github1"></i></a>
+            </div>
         </div>
     </div>
 </footer>

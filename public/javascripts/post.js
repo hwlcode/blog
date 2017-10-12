@@ -13,17 +13,19 @@ $(function () {
             cate: $('[name="cate"]').val(),
             subCate: $('[name="subCate"]').val(),
             title: $('[name="title"]').val(),
-            topics: $('.chips').material_chip('data'),
+            tags: $('.chips').material_chip('data'),
             post: simplemde.value()
         }
 
         $.ajax({
             url: '/post',
-            data: data,
+            data: {data: JSON.stringify(data)},
             type: 'POST',
             dataType: 'json',
             success: function (json) {
-                console.log(json);
+                if(json.code == 0 ){
+                    window.location.href="/";
+                }
             }
         })
     });

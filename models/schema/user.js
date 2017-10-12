@@ -2,7 +2,7 @@
 
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
-var findOrCreate = require('mongoose-findorcreate')
+var findOrCreate = require('mongoose-findorcreate');
 
 var UserSchema = new Schema({
         username: { type:String},

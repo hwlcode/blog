@@ -1,0 +1,35 @@
+<div class="card-panel grey lighten-5 z-depth-0 admin-say">
+    <div class="row valign-wrapper">
+        {#user}
+        <div class="col s3">
+            <img src="{avatar}" alt="" class="circle responsive-img">
+        </div>
+        {/user}
+        <div class="col {#user}s9{/user}">
+            <span class="black-text">
+            没有办法消除混乱，只是让某些局部变得更有秩序，把混乱转移到另一些领域.
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="pad_inner">
+    <h3 class="center-align">最新文章</h3>
+    <ul class="latest">
+        {#latest}
+        <li class="real_time_wrapper">
+            <i class="material-icons Tiny">chevron_right</i>
+            <a href="/article/{_id}">{title}</a>
+            <div class="publish-at">{created}</div>
+        </li>
+        {/latest}
+    </ul>
+</div>
+
+<div class="hot_tag_right pad_inner"><h3><span>热点标签</span></h3>
+<div class="inner_con">
+    {#tags}
+    <a class="kr-tag-gray" href="/tag/{_id}">{label}</a>
+    {/tags}
+</div>
+</div>

@@ -1,12 +1,12 @@
 <div class="navbar-fixed">
     <nav class="white" role="navigation">
         <div class="nav-wrapper header">
-            <a id="logo-container" href="/" class="brand-logo">尚学</a>
+            <a id="logo-container" href="/" class="brand-logo">知秋一叶</a>
             <ul class="right hide-on-med-and-down">
-                <li class="active"><a href="#">前端开发</a></li>
-                <li><a href="#">工作感悟</a></li>
-                <li><a href="#">生活随笔</a></li>
-                <li><a href="#">关于尚学</a></li>
+                <li class="active"><a href="/topic/前端开发">前端开发</a></li>
+                <li><a href="/topic/工作感悟">工作感悟</a></li>
+                <li><a href="/topic/生活随笔">生活随笔</a></li>
+                <li><a href="/about">关于知秋一叶</a></li>
                 {#user}
                 <li>
                     <a class="dropdown-button" href="#!" data-activates="dropdown1">

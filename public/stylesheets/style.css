@@ -1,14 +1,38 @@
+@font-face {
+  font-family: PingFang SC;
+  src: url("../fonts/PFHXJ.eot");
+  src: url("../fonts/PFHXJ.eot?#iefix") format("embedded-opentype"), url("../fonts/PFHXJ.woff") format("woff"), url("../fonts/PFHXJ.ttf") format("truetype"), url("../fonts/PFHXJ.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font: 14px PingFang SC, Helvetica Neue,Helvetica,PingFang SC,\5FAE\8F6F\96C5\9ED1,Tahoma,Arial,sans-serif; }
+
 nav {
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 0px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 1px -2px rgba(0, 0, 0, 0.2); }
 
 nav ul a, nav .brand-logo {
   color: #444; }
 
+.clear:before, .clear:after {
+  content: " ";
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
 p {
   line-height: 2rem; }
 
 .button-collapse {
   color: #26a69a; }
+
+.pad-top {
+  padding-top: 30px; }
+
+.article {
+  line-height: 30px;
+  font-size: 16px; }
 
 .parallax-container {
   min-height: 380px;
@@ -32,7 +56,8 @@ p {
 
 .material-icons {
   vertical-align: middle;
-  font-size: 16px; }
+  font-size: 16px;
+  margin-top: -4px; }
 
 .article-msg span {
   color: #999;
@@ -49,7 +74,7 @@ p {
 
 .card-content p {
   color: #999 !important;
-  font-size: 13px; }
+  font-size: 16px; }
 
 .card .card-content {
   padding: 24px 0; }
@@ -57,14 +82,18 @@ p {
 .card .card-action {
   padding: 16px 0; }
 
+.share {
+  margin: 30px 0; }
+
 .right-lib {
   padding-left: 45px !important; }
   .right-lib .pad_inner {
     margin-bottom: 2.5rem; }
     .right-lib .pad_inner h3 {
-      font-size: 18px;
+      font-size: 1rem;
+      font-weight: bold;
       color: #3d464d;
-      padding: .8rem 0;
+      padding: 1.2rem 0;
       text-align: center;
       border-top: 2px solid #009688;
       border-bottom: 1px dashed #e6e8eb; }
@@ -76,7 +105,7 @@ p {
   padding-left: 20px; }
 
 .kr-tag-gray {
-  padding: 0 15px;
+  padding: 5px 15px;
   border: 1px solid #68727d;
   border-radius: 15px;
   color: #68727d;
@@ -88,7 +117,7 @@ p {
   color: #009688 !important; }
 
 .cate {
-  padding: 30px 0 !important; }
+  padding: 30px 0 0 0 !important; }
 
 .cate .btn {
   margin-right: 10px;
@@ -134,18 +163,25 @@ p {
 .article-view .card-content {
   margin: 80px 0; }
 
-#login .iconfont {
+.card-content .iconfont, #login .iconfont {
   font-size: 25px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-right: 15px; }
 
-#login .icon-qq {
+.card-content .icon-qq, #login .icon-qq {
   font-size: 30px; }
 
-#login a {
+.card-content a, #login a, .latest a {
   color: rgba(0, 0, 0, 0.87); }
 
-#login a:hover {
-  color: #00b0ff; }
+.latest li {
+  margin-bottom: 15px; }
+
+.admin-say .black-text {
+  line-height: 30px; }
+
+.card-content a:hover, #login a:hover, .latest a:hover {
+  color: #26a69a; }
 
 .login-avatar {
   width: 45px;
@@ -165,10 +201,42 @@ nav ul a.dropdown-button:hover {
   width: 50px;
   height: 50px; }
 
+.login-card {
+  margin: 135px auto; }
+
+.home-list .card {
+  margin: 1.5rem 0 1rem 0; }
+
+.home-list .card-image {
+  width: 260px;
+  height: 160px;
+  margin-right: 20px;
+  overflow: hidden; }
+
+.home-list .card-content {
+  padding: 0; }
+
+.home-list .card-content {
+  height: 85px;
+  overflow: hidden; }
+
+.home-list .card-action {
+  padding-bottom: 0; }
+
+.footer-github {
+  color: #FFFFFF; }
+  .footer-github .iconfont {
+    font-size: 25px; }
+
+.footer-list li a {
+  line-height: 30px;
+  margin-bottom: 10px; }
+
 @media only screen and (min-width: 993px) {
   .container {
     width: 80%; }
   .parallax-container .section {
+    position: absolute;
     top: 40%; }
   #index-banner .section {
     top: 10%; } }
@@ -178,6 +246,8 @@ nav ul a.dropdown-button:hover {
     top: 0; }
   .icon-block {
     padding: 0 15px; }
+  .icon-block .material-icons {
+    font-size: inherit; }
   footer.page-footer {
     margin: 0; } }
 

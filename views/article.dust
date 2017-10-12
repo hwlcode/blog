@@ -3,97 +3,64 @@
         {<body}
 <div class="container">
 <div class="row">
+    {#article}
     <div class="col s8">
-        <nav class="white z-depth-0">
-            <div class="nav-wrapper">
-                <div class="col s12 no-pad">
-                    <a href="#!" class="breadcrumb">首页</a>
-                    <a href="#!" class="breadcrumb">前端开发</a>
-                    <a href="#!" class="breadcrumb">谈谈人生和理想</a>
-                </div>
-            </div>
-        </nav>
+        <!--<nav class="white z-depth-0">-->
+            <!--<div class="nav-wrapper">-->
+                <!--<div class="col s12 no-pad">-->
+                    <!--<a href="/" class="breadcrumb">首页</a>-->
+                    <!--<a href="/cate/{cate}" class="breadcrumb">{cate}</a>-->
+                    <!--<a href="javascript:;" class="breadcrumb">{title}</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
 
         <div class="article-view">
             <div class="card">
                 <div class="card-header">
-                    <span class="card-title">如何利用node+express快速构建API</span>
-                    <div>
+                    <div class="card-title pad-top">
+                        {title}
+                    </div>
+
+                    <div class="clear">
                         <div class="article-msg left">
-                            <span><i class="material-icons">date_range</i> 发布于：1天前</span>
-                            <span><i class="material-icons">remove_red_eye</i> 2365次阅读</span>
+                            <span><i class="material-icons">date_range</i> 发布于：{created}</span>
+                            <span><i class="material-icons">remove_red_eye</i> {pv}次阅读</span>
                         </div>
-                        <div class="right right-align"><a class="article-tag">angular</a></div>
+                        <div class="right right-align">
+                            {#topics}
+                            <a class="article-tag" href="/tags/{_id}">{label}</a>
+                            {/topics}
+                        </div>
                     </div>
                 </div>
-                <div class="card-content">
-                    在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.<br/>
-                    在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.<br/>
-                    在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.<br/>
-                    在平时开发的时候，可以在后端接口还没有开发好的前提下，前端可以提前摸拟出接口，实现前后端分离.<br/>
+                <div class="article pad-top">
+                    {post|s}
+                </div>
+                <div class="clear share">
+                    <div class="pad-top right">
+                        <div class="jiathis_style">
+                            <span class="jiathis_txt">分享到：</span>
+                            <a class="jiathis_button_tools_2"></a>
+                            <a class="jiathis_button_tools_4"></a>
+                        </div>
+                        <script type="text/javascript">
+                            var jiathis_config = {data_track_clickback:'true'};
+                        </script>
+                        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2138202" charset="utf-8"></script>
+                    </div>
+                </div>
+
+                <div>
+
                 </div>
             </div>
         </div>
+        {/article}
     </div>
 
     <div class="col s4 right-lib">
-        <div class="col">
-            <div class="card-panel grey lighten-5 z-depth-0">
-                <div class="row valign-wrapper">
-                    <div class="col s3">
-                        <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle responsive-img">
-                    </div>
-                    <div class="col s9">
-                      <span class="black-text">
-                        没有办法消除混乱，只是让某些局部变得更有秩序，把混乱转移到另一些领域.
-                      </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pad_inner">
-                <h3 class="center-align">最新文章</h3>
-                <ul>
-                    <li class="real_time_wrapper">
-                        <i class="material-icons Tiny">chevron_right</i> 全国2800家星巴克接入微信电子发票
-                        <div class="publish-at">39分钟前</div>
-                    </li>
-                    <li class="real_time_wrapper">
-                        <i class="material-icons Tiny">chevron_right</i> 全国2800家星巴克接入微信电子发票
-                        <div class="publish-at">39分钟前</div>
-                    </li>
-                    <li class="real_time_wrapper">
-                        <i class="material-icons Tiny">chevron_right</i> 全国2800家星巴克接入微信电子发票
-                        <div class="publish-at">39分钟前</div>
-                    </li>
-                    <li class="real_time_wrapper">
-                        <i class="material-icons Tiny">chevron_right</i> 全国2800家星巴克接入微信电子发票
-                        <div class="publish-at">39分钟前</div>
-                    </li>
-                    <li class="real_time_wrapper">
-                        <i class="material-icons Tiny">chevron_right</i> 全国2800家星巴克接入微信电子发票
-                        <div class="publish-at">39分钟前</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="hot_tag_right pad_inner"><h3><span>热点标签</span></h3>
-                <div class="inner_con">
-                    <a class="kr-tag-gray" href="/">淘当铺</a>
-                    <a class="kr-tag-gray" href="/">淘当铺</a>
-                    <a class="kr-tag-gray" href="/">淘当铺</a>
-                    <a class="kr-tag-gray" href="/">淘当铺</a>
-                    <a class="kr-tag-gray" href="/">淘当铺</a>
-                    <a class="kr-tag-gray" href="/">淘当铺</a>
-                    <a class="kr-tag-gray" href="/">淘当铺</a>
-                    <a class="kr-tag-gray" href="/">淘当铺</a>
-                    <a class="kr-tag-gray" href="/">淘当铺</a>
-                    <a class="kr-tag-gray" href="/">淘当铺</a>
-                    <a class="kr-tag-gray" href="/">淘当铺</a>
-                </div>
-            </div>
-
-        </div>
+        {> "right" /}
     </div>
 </div>
 </div>

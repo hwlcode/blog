@@ -10,4 +10,7 @@ $(document).ready(function(){
     });
     //header dropdown
     $(".dropdown-button").dropdown();
+
+    //highlight
+    hljs.initHighlightingOnLoad();
 });
