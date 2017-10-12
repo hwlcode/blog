@@ -11,6 +11,7 @@
     <link href="/lib/materialize/dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="/stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="/fonticon/iconfont.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    {+style}{/style}
 </head>
 <body>
 {> "header" /}
@@ -47,5 +48,6 @@
 <script src="/lib/materialize/dist/js/materialize.js"></script>
 <script src="/lib/highlight/src/highlight.js"></script>
 <script src="/javascripts/common.js"></script>
+{+script}{/script}
 </body>
 </html>

@@ -4,6 +4,7 @@ var Models = require('../models');
 var TopicModel  = Models.TopicModel;
 var UserModel = Models.UserModel;
 var LabelModel = Models.LabelModel;
+var DiscussModel = Models.DiscussModel;
 var ObjectId = require('mongodb').ObjectID;
 var marked = require('marked');
 var moment = require('moment');
@@ -140,11 +141,22 @@ router.get('/article/:id', function (req, res, next) {
             },{
                 path   : 'topics',
                 select : 'label'
+            },{
+                path   : 'discuss',
+                options: {sort: {createdAt: -1}},
+                populate: {
+                    path: 'user'
+                }
             }];
 
             doc.populate(opts, function(err, populatedDoc) {
+                console.log(populatedDoc);
                 populatedDoc.created = moment(new Date(populatedDoc.createdAt)).fromNow();
 
+                populatedDoc.discuss.map(function (item, index) {
+                    item.created = moment(new Date(item.createdAt)).fromNow();
+                    item.floor = populatedDoc.discuss.length - index;
+                });
                 res.render('article', {
                     article: populatedDoc,
                     user: user,
@@ -278,9 +290,35 @@ router.get('/topic/s/:name', function (req, res, next) {
 });
 
 router.get('/about', function (req, res, next) {
-    res.render('about',{
+    res.render('about',{});
+});
 
-    });
+router.post('/discuss', function (req, res, next) {
+    var body = req.body;
+    var discussMsg = marked(body.discuss);
+    var articleId = body.id;
+
+    co(function *() {
+        var user = yield UserModel.findOne({sourceTypeId: req.session.passport.user}).exec();
+        var discuss = yield DiscussModel.create({
+            post: discussMsg,
+            topics: articleId,
+            user: user._id
+        });
+
+        user.discuss.push(discuss._id);
+        user.save();
+
+        var article = yield TopicModel.findOne({_id: new ObjectId(articleId)}).exec();
+        article.discuss.push(discuss._id);
+        article.discussNum += 1;
+        article.save();
+
+        yield res.json({
+            code: 0,
+            msg: 'success'
+        });
+    })
 });
 
 module.exports = router;

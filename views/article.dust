@@ -1,9 +1,12 @@
 {>"./layout" /}
-
+{<style}
+<link rel="stylesheet" href="/lib/simplemde/dist/simplemde.min.css">
+{/style}
         {<body}
 <div class="container">
 <div class="row">
     {#article}
+    <input type="hidden" value="{_id}" id="article_id"/>
     <div class="col s8">
         <!--<nav class="white z-depth-0">-->
             <!--<div class="nav-wrapper">-->
@@ -51,8 +54,45 @@
                     </div>
                 </div>
 
-                <div>
-
+                <div id="discuss-box">
+                    <textarea id="discuss" disabled placeholder="请登录后参与评论,支持Mardown语法..."></textarea>
+                    <div class="pad-top clear">
+                        <div class="left">
+                            {#user}
+                            <span class="login-avatar">
+                                <img src="{avatar}" alt="" width="40" height="40"/>
+                            </span>
+                            {username}
+                            {/user}
+                            {^user}
+                            <a class="modal-trigger" href="#login">登录</a>后参与讨论
+                            {/user}
+                        </div>
+                        <div class="right right-align">
+                            <a {#user}id="submit-discuss"{/user} class="btn {^user}modal-trigger{/user}" {^user}href="#login"{/user}>提交评论</a>
+                        </div>
+                    </div>
+                    <ul id="discuss-list">
+                        {#discuss}
+                        <li class="clear">
+                            <div class="col s1 no-pad">
+                                <span class="login-avatar">
+                                    {#user}
+                                    <img src="{avatar}" alt="" width="40" height="40"/>
+                                    {/user}
+                                </span>
+                                  <span class="floor">{floor}楼</span>
+                            </div>
+                            <div class="col s11 no-pad">
+                                <div class="clear">
+                                    <span class="username">{#user}{username}{/user}</span>
+                                    <div class="right publish">{created}</div>
+                                </div>
+                                {post|s}
+                            </div>
+                        </li>
+                        {/discuss}
+                    </ul>
                 </div>
             </div>
         </div>
@@ -64,4 +104,8 @@
     </div>
 </div>
 </div>
+{<script}
+<script src="/lib/simplemde/dist/simplemde.min.js"></script>
+<script src="/javascripts/view.js"></script>
+{/script}
         {/body}
