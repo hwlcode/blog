@@ -195,6 +195,7 @@ router.get('/tag/:id', function (req, res, next) {
         var tags = yield LabelModel.find().exec();
         var latest = yield TopicModel.find().limit( 5 ).sort({createdAt: -1}).exec();
         latest.map(function (item) {
+            item.post = item.post.split('<!--more-->')[0];
             item.created = moment(new Date(item.createdAt)).fromNow();
         });
 
@@ -229,6 +230,7 @@ router.get('/topic/:name', function (req, res, next) {
         var tags = yield LabelModel.find().exec();
         var latest = yield TopicModel.find().limit( 5 ).sort({createdAt: -1}).exec();
         latest.map(function (item) {
+            item.post = item.post.split('<!--more-->')[0];
             item.created = moment(new Date(item.createdAt)).fromNow();
         });
 
@@ -263,6 +265,7 @@ router.get('/topic/s/:name', function (req, res, next) {
         var tags = yield LabelModel.find().exec();
         var latest = yield TopicModel.find().limit( 5 ).sort({createdAt: -1}).exec();
         latest.map(function (item) {
+            item.post = item.post.split('<!--more-->')[0];
             item.created = moment(new Date(item.createdAt)).fromNow();
         });
 

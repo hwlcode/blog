@@ -1,11 +1,7 @@
 $(function () {
     var simplemde = new SimpleMDE({
         element: $("#post")[0],
-        spellChecker: false,
-        autosave: {
-            enabled: true,
-            unique_id: "post",
-        }
+        spellChecker: false
     });
 
     $('#submit').click(function () {
