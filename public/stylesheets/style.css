@@ -69,7 +69,7 @@ p {
   border-radius: 20px;
   padding: 3px 15px;
   cursor: pointer;
-  margin-right: 0 !important;
+  margin-right: 10px !important;
   font-size: 13px; }
 
 .card-content p {
@@ -147,7 +147,7 @@ p {
   padding: 0 !important; }
 
 .post {
-  margin: 20px 0 0 0; }
+  margin: 20px 0 60px 0; }
 
 .post-footer {
   position: fixed;
@@ -232,7 +232,7 @@ nav ul a.dropdown-button:hover {
   line-height: 30px;
   margin-bottom: 10px; }
 
-.CodeMirror, .CodeMirror-scroll {
+#discuss-box .CodeMirror, #discuss-box .CodeMirror-scroll {
   min-height: 120px !important;
   height: 120px !important; }
 

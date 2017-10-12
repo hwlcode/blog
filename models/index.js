@@ -2,9 +2,9 @@
 var mongoose = require('mongoose');
 var ENV = require('../evn');
 
-mongoose.connect('mongodb://127.0.0.1:27027/'+ENV.db, {useMongoClient: true}, function(err){
+mongoose.connect(ENV.dbLink + ENV.db, {useMongoClient: true}, function(err){
     if (err) {
-        console.error('connect to %s error: ', 'mongodb://127.0.0.1:27027/'+ENV.db, err.message);
+        console.error('connect to %s error: ', ENV.dbLink + ENV.db, err.message);
         process.exit(1);
     }
 });
