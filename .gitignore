@@ -1,6 +1,6 @@
 .idea
 node_modules
-env.js
+evn.js
 package-lock.json
 
 
