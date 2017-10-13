@@ -16,12 +16,12 @@
                     <li><a class="white-text" href="http://redux.js.org/" no-follow target="_blank">Redux</a></li>
                 </ul>
             </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">联系我</h5>
-                <ul>
-                    <li><a class="white-text" href="/about">关于知秋一叶</a></li>
-                </ul>
-            </div>
+            <!--<div class="col l3 s12">-->
+                <!--<h5 class="white-text">联系我</h5>-->
+                <!--<ul>-->
+                    <!--<li><a class="white-text" href="/about">关于知秋一叶</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
         </div>
     </div>
     <div class="footer-copyright">

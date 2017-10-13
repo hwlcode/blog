@@ -7,7 +7,7 @@
                 <li><a href="/topic/前端开发">前端开发</a></li>
                 <li><a href="/topic/工作感悟">工作感悟</a></li>
                 <li><a href="/topic/生活随笔">生活随笔</a></li>
-                <li><a href="/about">关于知秋一叶</a></li>
+                <!--<li><a href="/about">关于知秋一叶</a></li>-->
                 {#user}
                 <li>
                     <a class="dropdown-button" href="#!" data-activates="dropdown1">
