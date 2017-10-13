@@ -30,7 +30,7 @@
                             </div>
                             <div class="right right-align">
                                 {#topics}
-                                <a class="article-tag" href="/tags/{_id}">{label}</a>
+                                <a class="article-tag" href="/tag/{_id}">{label}</a>
                                 {/topics}
                             </div>
                         </div>
