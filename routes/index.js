@@ -207,6 +207,7 @@ router.get('/tag/:id', function (req, res, next) {
             }]
         }).exec(function (err, docPopulate) {
             console.log(docPopulate);
+            if(docPopulate == null){return false;}
             docPopulate.articleId.map(function (item) {
                 item.post = item.post.split('<!--more-->')[0];
                 item.created = moment(new Date(item.createdAt)).fromNow();
