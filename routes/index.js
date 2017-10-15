@@ -148,7 +148,7 @@ router.get('/article/:id', function (req, res, next) {
                     path: 'user'
                 }
             }];
-
+            if(doc == null){return false;}
             doc.populate(opts, function(err, populatedDoc) {
                 console.log(populatedDoc);
                 populatedDoc.created = moment(new Date(populatedDoc.createdAt)).fromNow();
