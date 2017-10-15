@@ -10,6 +10,17 @@
     <link href="/lib/materialize/dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="/stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="/fonticon/iconfont.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?4315dc348a263a070ef1d3433dbc72aa";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
 </head>
 <body>
 {> "login-header" /}
